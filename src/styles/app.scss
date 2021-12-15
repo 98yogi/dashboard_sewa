@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+$family-sans-serif: "Roboto", "sans-serif";
+@import url('https://cdn.jsdelivr.net/gh/duyplus/fontawesome-pro/css/all.css');
+@import '~bulma/bulma';
+@import '~@cityssm/bulma-sticky-table/sticky-table';
+@import '~buefy/src/scss/buefy';
+
+// $example: rgb(255, 254, 254);
+
+.is-condensed {
+    font-family: "Roboto Condensed";
+}
+
+$warning : #e0ab18;
+.is-text-warning {
+    color: $warning;
+}
+
+.is-progress {
+    max-height: 5px;
+}
+
+.box {
+    &.is-scrollable {
+        overflow-y: scroll;
+        max-height: 320px;
+    }
+    
+}
+
+.column-hover {
+    .title-hidden {
+        display: none;
+        font-weight: bold;
+        margin-top: 10px;
+        font-size: 24px;
+    }
+    &:hover {
+        // background-color: $hover;
+        .title-hidden {
+            display: block;
+            // content: (); 
+        }
+        .title-hover {
+            display: none;
+        }
+    }
+}
+
